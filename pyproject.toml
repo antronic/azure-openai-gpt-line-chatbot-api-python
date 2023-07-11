@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "azure-openai-gpt-line-chatbot-api-python"
+version = "0.1.0"
+description = "LINE Chatbot webhook - Connect with Azure OpenAI"
+authors = ["Jirachai Chansivanon <jirachai.c@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "azure_openai_gpt_line_chatbot_api_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pendulum = "^2.1.2"
+flask = "^2.3.2"
+line-bot-sdk = "^3.1.0"
+openai = "^0.27.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
