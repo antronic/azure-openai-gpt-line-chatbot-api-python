@@ -67,8 +67,7 @@ def webhook():
     return "OK"
 
 if __name__ == "__main__":
-    host = os.environ.get("HOST", "0.0.0.0")
-    port = int(os.environ.get("PORT", 5000))
+    port = os.environ.get("PORT", 5000)
     debug = bool(os.environ.get("DEBUG", False))
 
-    app.run(host, port=port, debug=debug)
+    app.run("0.0.0.0", port=int(port), debug=debug)
